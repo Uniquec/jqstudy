@@ -1,0 +1,141 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.chy-box {
+    width: 100%;
+    height: 600px;
+    padding-top: 30px;
+    display: flex;
+
+    .question {
+        width: 33%;
+        height: 100%;
+        background-color: #eeefef;
+
+        .question-title {
+            font-size: 20px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+
+        .question-line {
+            width: 85%;
+            height: 1px;
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color: #cdd4cc;
+        }
+
+        .question-information {
+            font-size: 16px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    .answers-and-btn {
+        width: 67%;
+        height: 100%;
+
+        .answers {
+            width: 100%;
+            height: 85%;
+            background-color: #d3d8d6;
+
+            .answers-list {
+                padding-top: 5%;
+                .answers-option {
+                    width: 80%;
+                    height: 92px;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    box-sizing: border-box;
+                    background-color: white;
+                    display: flex;
+                    position: relative;
+                    overflow: hidden;
+                    padding: 2px;
+
+                    .tip {
+                        width: 50px;
+                        height: 30px;
+                        transform: rotate(-45deg);
+                        background-color: #00b546;
+                        margin-top: -8px;
+                        margin-left: -18px;
+                        position: absolute;
+                        overflow: hidden;
+                        //display: none;
+
+                        .white-circle {
+                            width: 13px;
+                            height: 13px;
+                            margin-top: 12px;
+                            margin-left: 18px;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            //display: none;
+                        }
+                    }
+
+                    .answers-letter, .answers-content {
+                        padding-top: 20px;
+                        margin-left: 20px;
+                        font-size: 18px;
+                    }
+
+                    .answers-letter {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        .submitbtn {
+            width: 100%;
+            height: 15%;
+            background-color: #e3e6e5;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                width: 120px;
+                height: 35px;
+                margin-right: 10px;
+                margin-top: 4%;
+                background-color: #00b546;
+                color: white;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+    .chose {
+        border: 2px solid #4fcc7f;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .chy-box {
+        display: block;
+
+        .question {
+            width: 100%;
+            height: 150px;
+        }
+
+        .answers-and-btn {
+            width: 100%;
+        }
+    }
+}

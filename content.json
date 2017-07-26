@@ -1,0 +1,26 @@
+[
+  {
+    "number":1,
+    "question":"1下列哪条代码无法打开相应的标签页?",
+    "answerA":"1$('#myTab a [href=\"#profile\"]').tab('show')",
+    "answerB":"1$('#myTab a:first').tab('show')",
+    "answerC":"1$('#myTab a:last').tab('show')",
+    "answerD":"1$('#myTab li:first').tab('show')"
+  },
+  {
+    "number":2,
+    "question":"2下列哪条代码无法打开相应的标签页?",
+    "answerA":"2$('#myTab a [href=\"#profile\"]').tab('show')",
+    "answerB":"2$('#myTab a:first').tab('show')",
+    "answerC":"2$('#myTab a:last').tab('show')",
+    "answerD":"2$('#myTab li:first').tab('show')"
+  },
+  {
+    "number":3,
+    "question":"3下列哪条代码无法打开相应的标签页?",
+    "answerA":"3$('#myTab a [href=\"#profile\"]').tab('show')",
+    "answerB":"3$('#myTab a:first').tab('show')",
+    "answerC":"3$('#myTab a:last').tab('show')",
+    "answerD":"3$('#myTab li:first').tab('show')"
+  }
+]
