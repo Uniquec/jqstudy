@@ -1,6 +1,3 @@
-/**
- * Created by chy on 2017/7/19 0019.
- */
 $(function () {
     function setText(res, current) {
         $('#number').text('单选练习题 (' + res[current].number + '/' + res.length + ')');
@@ -11,7 +8,7 @@ $(function () {
         $('#answerD').text(res[current].answerD);
     }
 
-    $.get('./content.json', res=> {
+    $.get('/data/content.json', res=> {
         let current = 0;
         setText(res, current);
 
@@ -19,19 +16,19 @@ $(function () {
             $('#last-question').css("background-color", "grey");
         }
 
-        $('#next-question').click(function (e) {
+        $('#next-question').click(()=> {
             current++;
             setText(res, current);
         });
 
-        $('#prev-question').click(function (e) {
+        $('#prev-question').click(()=> {
             current--;
             setText(res, current);
         });
 
     });
 
-    $('.answers-option').click(function (e) {
+    $('.answers-option').click(()=> {
         $('.tip').addClass('hide');
         $('.answers-option').removeClass('chose');
         $(e.currentTarget).addClass('chose');
