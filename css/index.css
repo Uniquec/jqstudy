@@ -16,10 +16,19 @@ body {
   height: 100%;
   background-color: #eeefef;
 }
-.chy-box .question .question-title {
-  font-size: 20px;
+.chy-box .question .title-and-time {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
   padding-top: 30px;
-  padding-left: 20px;
+}
+.chy-box .question .title-and-time .question-title {
+  font-size: 20px;
+}
+.chy-box .question .title-and-time .time-item {
+  display: flex;
 }
 .chy-box .question .question-line {
   width: 85%;
@@ -100,6 +109,9 @@ body {
   color: white;
   border: none;
   outline: none;
+}
+.chy-box .answers-and-btn .submitbtn .lightgray {
+  background-color: lightgrey;
 }
 .chy-box .hide {
   display: none;
