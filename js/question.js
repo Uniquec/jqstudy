@@ -11,7 +11,7 @@ $(function () {
         $('#answerD').text(res[current].answerD);
     }
 
-    $.get('./data/content.json', res=> {
+    $.get('../data/content.json', res=> {
         setText(res, current);
 
         $("#prev-question").addClass('lightgray');

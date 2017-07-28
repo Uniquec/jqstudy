@@ -1,0 +1,33 @@
+.homePage {
+  background: url("../image/home-bgc.jpg");
+  height: 620px;
+}
+.homePage .title {
+  text-align: center;
+  font-size: 38px;
+  padding-top: 8%;
+}
+.homePage .btn {
+  text-align: center;
+  width: 20%;
+  margin: auto;
+  margin-top: 8%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.homePage .btn button {
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 25px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(43, 165, 250, 0.08);
+}
+.homePage .btn button:focus {
+  outline: none;
+}
+.homePage .btn button:hover {
+  background-color: rgba(43, 165, 250, 0.24);
+}
